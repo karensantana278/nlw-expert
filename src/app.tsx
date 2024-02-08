@@ -3,6 +3,12 @@ import { NewNoteCard } from './components/new-note-card';
 import { NoteCard } from './components/note-card';
 
 
+const note = {
+  time: new Date(),
+  description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, nihil. Animi corrupti vel velit excepturi cumque maxime ab officiis fuga? Perferendis voluptatibus eos repudiandae ipsam quasi non autem debitis soluta?"
+}
+
+
 export function App() {
 
   return (
@@ -22,17 +28,8 @@ export function App() {
 
         <NewNoteCard />
 
-        <NoteCard time="há 2 dias" description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, nihil. Animi corrupti vel velit excepturi cumque maxime ab officiis fuga? Perferendis voluptatibus eos repudiandae ipsam quasi non autem debitis soluta?" />
+        <NoteCard note={note} />
 
-        <NoteCard time="há 3 dias" description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, nihil. Animi corrupti vel velit excepturi cumque maxime ab officiis fuga? Perferendis voluptatibus eos repudiandae ipsam quasi non autem debitis soluta?" />
-
-        <NoteCard time="há 4 dias" description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, nihil. Animi corrupti vel velit excepturi cumque maxime ab officiis fuga? Perferendis voluptatibus eos repudiandae ipsam quasi non autem debitis soluta?" />
-
-        <NoteCard time="há 5 dias" description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, nihil. Animi corrupti vel velit excepturi cumque maxime ab officiis fuga? Perferendis voluptatibus eos repudiandae ipsam quasi non autem debitis soluta?" />
-
-        <NoteCard time="há 6 dias" description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, nihil. Animi corrupti vel velit excepturi cumque maxime ab officiis fuga? Perferendis voluptatibus eos repudiandae ipsam quasi non autem debitis soluta?" />
-
-      
 
       </div>
 
